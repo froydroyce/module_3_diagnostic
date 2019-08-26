@@ -1,13 +1,13 @@
 <h1>Search Results</h1>
 
 <section class="stations">
-  <% facade.stations.each do |station| %>
-    <h3><%= station.name %></h3>
+  <% facade.results.each do |result| %>
+    <h3><%= result.name %></h3>
     <ul>
-      <li><%= station.address %>/li>
-      <li><%= station.fuel_type %>/li>
-      <li><%= station.distance %>/li>
-      <li><%= station.access_time %>/li>
+      <li><%= result.address %>/li>
+      <li><%= result.fuel_type %>/li>
+      <li><%= result.distance %>/li>
+      <li><%= result.access_time %>/li>
     </ul>
   <% end %>
 </section>
