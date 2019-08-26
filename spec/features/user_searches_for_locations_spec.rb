@@ -22,6 +22,14 @@ describe 'As a user' do
           expect(page).to have_content("Distance: 0.31 miles away")
           expect(page).to have_content("24 hours daily")
         end
+
+        within(".stations:last-child") do
+          expect(page).to have_content("UDR")
+          expect(page).to have_content("Address: 800 Acoma St")
+          expect(page).to have_content("Fuel Type: ELEC")
+          expect(page).to have_content("Distance: 0.31 miles away")
+          expect(page).to have_content("24 hours daily")
+        end
       end
     end
   end
