@@ -12,7 +12,7 @@ class StationSearch
   private
 
   def stations(zip)
-    @_results ||= service.nearest_stations(zip)
+    @_results ||= service.nearest_stations(zip)[:fuel_stations]
   end
 
   def service

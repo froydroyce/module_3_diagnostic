@@ -13,7 +13,9 @@ describe 'As a user' do
 
         expect(current_path).to eq(search_path)
 
-        expect(page).to have_css('.stations', count: 10)
+        expect(page).to have_css('.stations')
+
+        within(".stations")
       end
     end
   end
