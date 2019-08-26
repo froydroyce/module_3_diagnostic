@@ -2,5 +2,12 @@
 
 <section class="stations">
   <% facade.stations.each do |station| %>
-
+    <h3><%= station.name %></h3>
+    <ul>
+      <li><%= station.address %>/li>
+      <li><%= station.fuel_type %>/li>
+      <li><%= station.distance %>/li>
+      <li><%= station.access_time %>/li>
+    </ul>
+  <% end %>
 </section>
