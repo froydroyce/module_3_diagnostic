@@ -14,4 +14,8 @@ class StationSearch
   def stations(zip)
     @_results ||= service.nearest_stations(zip)
   end
+
+  def service
+    @_service ||= NrelService.new
+  end
 end
