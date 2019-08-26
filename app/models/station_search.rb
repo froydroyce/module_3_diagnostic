@@ -1,5 +1,5 @@
 class StationSearch
   def stations
-    get_json
+    get_json("")
   end
 end
